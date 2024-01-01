@@ -103,7 +103,7 @@ body {
 }
 
 .star:nth-child(3) {
-  top: calc(50% - -40px);
+  top: calc(50% - -200px);
   left: calc(50% - 222px);
   animation-delay: 7000ms;
 }
