@@ -1,7 +1,10 @@
 import "./style.css";
 
-console.log("Webpack, ESLint, and Prettier Template");
-
-export default function checkTestingWorks(a, b) {
-  return a + b;
+function bindTitleButtonToScroll() {
+  const titleButton = document.querySelector("[data-title-button]");
+  titleButton.addEventListener("click", () => {
+    document.querySelector(".about-me").scrollIntoView();
+  });
 }
+
+bindTitleButtonToScroll();

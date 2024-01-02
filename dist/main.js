@@ -16,7 +16,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ checkTestingWorks)\n/* harmony export */ });\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\nconsole.log(\"Webpack, ESLint, and Prettier Template\");\nfunction checkTestingWorks(a, b) {\n  return a + b;\n}\n\n//# sourceURL=webpack://webpack_eslint_prettier_template/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\nfunction bindTitleButtonToScroll() {\n  const titleButton = document.querySelector(\"[data-title-button]\");\n  titleButton.addEventListener(\"click\", () => {\n    document.querySelector(\".about-me\").scrollIntoView();\n  });\n}\nbindTitleButtonToScroll();\n\n//# sourceURL=webpack://webpack_eslint_prettier_template/./src/index.js?");
 
 /***/ }),
 
