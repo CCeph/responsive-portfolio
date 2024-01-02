@@ -177,6 +177,10 @@ body {
   transition: scale ease-in-out 0.5s;
 }
 
+.projects a {
+  text-decoration: none;
+}
+
 button:active {
   box-shadow: var(--clickedRedButtonShadow);
 }
