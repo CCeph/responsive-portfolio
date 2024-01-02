@@ -107,6 +107,11 @@ body {
   padding: 10px;
 }
 
+.about-me .flex-wrapper > p {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
 .flex-wrapper .language-images {
   display: grid;
   grid-template-columns: var(--language-icon-size) var(--language-icon-size) var(
@@ -128,6 +133,12 @@ body {
 
 .icon-wrapper > :nth-child(1) {
   padding-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+  .about-me .flex-wrapper {
+    flex-direction: column;
+  }
 }
 
 /* Start of styling for background shooting stars */
