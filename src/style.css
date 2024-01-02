@@ -28,6 +28,8 @@ textarea {
   --fall-duration: 12s;
   --shining-thickness: 2px;
   --shining-size: 15px;
+  --primary-font-color: white;
+  --secondary-font-color: rgb(209, 49, 49);
 }
 
 body {
@@ -43,18 +45,46 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: white;
+  color: var(--primary-font-color);
 }
 
 .titlePage > h1 {
   font-weight: 300;
+  font-size: 2rem;
   margin: 0px;
   padding: 10px;
 }
 
 .titlePage span {
-  color: rgb(209, 49, 49);
+  color: var(--secondary-font-color);
   font-weight: 400;
+}
+
+.titlePage button {
+  border: 1px solid var(--secondary-font-color);
+  color: var(--secondary-font-color);
+  background-color: transparent;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  padding: 10px;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  scale: 1;
+  transition: scale ease-in-out 0.5s;
+}
+
+.titlePage button:hover {
+  /* background-color: #7f8396; */
+  scale: 1.1;
+  transition: scale ease-in-out 0.5s;
+}
+
+.titlePage .material-symbols-outlined {
+  font-size: 2rem;
 }
 
 /* Start of styling for background shooting stars */
