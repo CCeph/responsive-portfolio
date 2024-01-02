@@ -88,21 +88,25 @@ body {
   font-size: 2rem;
 }
 
-.about-me {
+.about-me,
+.projects {
   color: white;
   max-width: 1000px;
   margin: 0 auto;
 }
 
-.about-me > h1 {
+.about-me > h1,
+.projects > h1 {
   text-align: center;
 }
 
-.about-me .flex-wrapper {
+.about-me > .flex-wrapper,
+.projects .flex-wrapper {
   display: flex;
 }
 
-.about-me .flex-wrapper > * {
+.about-me .flex-wrapper > *,
+.projects .flex-wrapper > * {
   flex: 1;
   padding: 10px;
 }
