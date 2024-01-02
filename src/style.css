@@ -9,6 +9,7 @@
 
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 button,
@@ -31,6 +32,8 @@ textarea {
   --primary-font-color: white;
   --secondary-font-color: rgb(209, 49, 49);
   --language-icon-size: 100px;
+  --page-max-width: 1500px;
+  --default-outside-padding: 0px 30px;
 }
 
 body {
@@ -91,7 +94,7 @@ body {
 .about-me,
 .projects {
   color: white;
-  max-width: 1000px;
+  max-width: var(--page-max-width);
   margin: 0 auto;
 }
 
@@ -105,10 +108,9 @@ body {
   display: flex;
 }
 
-.about-me .flex-wrapper > *,
-.projects .flex-wrapper > * {
+.about-me .flex-wrapper > * {
   flex: 1;
-  padding: 10px;
+  padding: var(--default-outside-padding);
 }
 
 .about-me .flex-wrapper > p {
@@ -139,9 +141,27 @@ body {
   padding-bottom: 10px;
 }
 
+.projects .flex-wrapper > .description {
+  flex: 1;
+  padding: var(--default-outside-padding);
+}
+
+.projects .flex-wrapper > img {
+  flex: 2.5;
+  min-width: 0;
+  object-fit: cover;
+  margin: var(--default-outside-padding);
+  border-radius: 10px;
+}
+
 @media (max-width: 800px) {
-  .about-me .flex-wrapper {
+  .about-me .flex-wrapper,
+  .projects .flex-wrapper {
     flex-direction: column;
+  }
+
+  .projects h2 {
+    text-align: center;
   }
 }
 
