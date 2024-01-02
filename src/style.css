@@ -195,6 +195,18 @@ button:active {
   .projects h2 {
     text-align: center;
   }
+
+  .projects .flex-wrapper img {
+    order: 1;
+  }
+
+  .projects .flex-wrapper .description {
+    order: 2;
+  }
+
+  .projects .description button {
+    margin: 10px auto;
+  }
 }
 
 /* Start of styling for background shooting stars */
