@@ -33,7 +33,7 @@ textarea {
   --secondary-font-color: rgb(209, 49, 49);
   --language-icon-size: 100px;
   --page-max-width: 1500px;
-  --default-outside-padding: 0px 30px;
+  --default-outside-padding: 15px 30px 15px;
 }
 
 body {
@@ -101,6 +101,7 @@ body {
 .about-me > h1,
 .projects > h1 {
   text-align: center;
+  font-size: 3.5rem;
 }
 
 .about-me > .flex-wrapper,
