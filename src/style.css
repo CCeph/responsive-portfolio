@@ -120,6 +120,16 @@ body {
   font-size: var(--language-icon-size);
 }
 
+.language-images .icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-wrapper > :nth-child(1) {
+  padding-bottom: 10px;
+}
+
 /* Start of styling for background shooting stars */
 
 /* We set an angel of 135deg for the falling stars */
