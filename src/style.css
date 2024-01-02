@@ -30,11 +30,11 @@ textarea {
   --shining-size: 15px;
   --primary-font-color: white;
   --secondary-font-color: rgb(209, 49, 49);
+  --language-icon-size: 100px;
 }
 
 body {
   background-color: #0c0d13;
-  display: flex;
   font-family: "Raleway", sans-serif;
 }
 
@@ -86,6 +86,38 @@ body {
 
 .titlePage .material-symbols-outlined {
   font-size: 2rem;
+}
+
+.about-me {
+  color: white;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-me > h1 {
+  text-align: center;
+}
+
+.about-me .flex-wrapper {
+  display: flex;
+}
+
+.about-me .flex-wrapper > * {
+  flex: 1;
+  padding: 10px;
+}
+
+.flex-wrapper .language-images {
+  display: grid;
+  grid-template-columns: var(--language-icon-size) var(--language-icon-size) var(
+      --language-icon-size
+    );
+  gap: 10px;
+  justify-content: center;
+}
+
+.language-images i {
+  font-size: var(--language-icon-size);
 }
 
 /* Start of styling for background shooting stars */
